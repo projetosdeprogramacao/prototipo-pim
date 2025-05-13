@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido Interno de Material</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+
+  <div class="bg-white p-6 rounded shadow-md max-w-6xl mx-auto">
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-bold">Pedido Interno de Material</h1>
+      <button class="px-4 py-2 bg-white border border-gray-400 text-gray-800 rounded hover:bg-gray-100">
+        Novo Pedido Interno de Material
+      </button>
+    </div>
+
+    <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <input class="border p-2 rounded" type="text" placeholder="Pesquisar por Almoxarifado">
+      <input class="border p-2 rounded" type="text" placeholder="Pesquisar pelo Nº do PIM">
+      <input class="border p-2 rounded" type="text" placeholder="Pesquisar por Situação">
+      
+      <select class="border p-2 rounded">
+        <option>Pesquisar por Material</option>
+      </select>
+      <select class="border p-2 rounded">
+        <option>Pesquisar por Natureza da Despesa</option>
+      </select>
+      <select class="border p-2 rounded">
+        <option>Pesquisar por Unidade Gestora</option>
+      </select>
+
+      <input class="border p-2 rounded" type="date" placeholder="Data Início">
+      <input class="border p-2 rounded" type="date" placeholder="Data Fim">
+      <select class="border p-2 rounded">
+        <option>Pesquisar por Subitem da Despesa</option>
+      </select>
+
+      <select class="border p-2 rounded">
+        <option>Pesquisar por Evento</option>
+      </select>
+      <input class="border p-2 rounded" type="text" placeholder="Pesquisar por Unidade Requisitante">
+      <input class="border p-2 rounded" type="text" placeholder="Pesquisar por Requisitante Responsável">
+      
+      <select class="border p-2 rounded">
+        <option>Pesquisar por Tipo de Atendimento</option>
+      </select>
+    </form>
+
+    <div class="mt-6 flex gap-4">
+      <button class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Pesquisar</button>
+      <button class="border border-gray-400 px-6 py-2 rounded hover:bg-gray-100">Limpar</button>
+    </div>
+  </div>
+
+</body>
+</html>
